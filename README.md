@@ -34,7 +34,7 @@ Finally, the **Template** renders the data into an **HTML response**, which is r
 
 ##  Project Structure
 
-```plaintext
+plaintext
 employee_project/              # Projet principal Django
 │
 ├── employee/                  # Application "employee"
@@ -64,3 +64,7 @@ employee_project/              # Projet principal Django
 ├── db.sqlite3                 # Base de données SQLite
 ├── manage.py                  # Script de gestion Django
 └── venv/                      # Environnement virtuel
+
+---
+##  Project Structure
+## ⚙️ Installation and Execution
