@@ -34,33 +34,33 @@ Finally, the **Template** renders the data into an **HTML response**, which is r
 
 ##  Structure du projet  
 
+employee_project/              # Projet principal Django
+│
+├── employee/                  # Application "employee"
+│   ├── migrations/            # Fichiers de migration (base de données)
+│   ├── templates/employee/    # Templates HTML
+│   │   ├── base.html          # Template de base
+│   │   ├── list.html          # Liste des employés
+│   │   ├── formulaire.html    # Formulaire (ajout/modif)
+│   │   └── confirm_delete.html# Confirmation suppression
+│   │
+│   ├── __init__.py
+│   ├── admin.py               # Configuration Django admin
+│   ├── apps.py                # Configuration de l’application
+│   ├── forms.py               # Formulaires (ModelForm)
+│   ├── models.py              # Modèle Employee
+│   ├── tests.py               # Tests unitaires
+│   ├── urls.py                # Routes de l’app Employee
+│   └── views.py               # Logique (CRUD : Create, Read, Update, Delete)
+│
+├── employee_project/          # Répertoire principal du projet
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py            # Configuration générale du projet
+│   ├── urls.py                # Routes principales
+│   └── wsgi.py
+│
+├── db.sqlite3                 # Base de données SQLite
+├── manage.py                  # Script de gestion Django
+└── venv/                      # Environnement virtuel
 
-employee_project/ # Projet principal Django
-│
-├── employee/ # Application "employee"
-│ ├── migrations/ # Fichiers de migration (base de données)
-│ ├── templates/employee/ # Templates HTML
-│ │ ├── base.html # Template de base
-│ │ ├── list.html # Liste des employés
-│ │ ├── formulaire.html # Formulaire (ajout/modif)
-│ │ └── confirm_delete.html# Confirmation suppression
-│ │
-│ ├── init.py
-│ ├── admin.py # Configuration Django admin
-│ ├── apps.py # Configuration de l’application
-│ ├── forms.py # Formulaires (ModelForm)
-│ ├── models.py # Modèle Employee
-│ ├── tests.py # Tests unitaires
-│ ├── urls.py # Routes de l’app Employee
-│ └── views.py # Logique (CRUD : Create, Read, Update, Delete)
-│
-├── employee_project/ # Répertoire principal du projet
-│ ├── init.py
-│ ├── asgi.py
-│ ├── settings.py # Configuration générale du projet
-│ ├── urls.py # Routes principales
-│ └── wsgi.py
-│
-├── db.sqlite3 # Base de données SQLite
-├── manage.py # Script de gestion Django
-└── venv/ # Environnement virtuel
