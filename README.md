@@ -70,8 +70,10 @@ employee_project/              # Projet principal Django
 ##  Installation and Execution
 
 ### 1. Create and activate a virtual environment
-python -m venv venv
-venv\Scripts\activate
+python -m venv venv //
+source venv/bin/activate  # Linux / Mac
+venv\Scripts\activate     # Windows
+
 
 ### 2. Install dependencies
 pip install django
