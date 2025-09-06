@@ -16,7 +16,7 @@ It provides a user-friendly interface to **add, update, view, and delete employe
 ##  Architecture (MVT)  
 The project follows the **MVT (Model–View–Template)** design pattern:
   
-<img width="5704" height="1895" alt="Image" src="https://github.com/user-attachments/assets/ee42827a-e771-4ac7-a752-617a177ff73a" /> 
+  <img width="5704" height="1895" alt="Image" src="https://github.com/user-attachments/assets/ee42827a-e771-4ac7-a752-617a177ff73a" /> 
 
 - **Model**: Manages the data and business logic. It defines the structure of the database (fields, relationships, validations, constraints, etc.) and provides an interface to interact with the data.
 
