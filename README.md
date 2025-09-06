@@ -33,7 +33,71 @@ Finally, the **Template** renders the data into an **HTML response**, which is r
 
 ---
 
-## 📂 Project Structure  
+##  Project Structure  
+
+# Employee Management System 🧑‍💼  
+
+## 📌 Description  
+Ce projet est une application web de **gestion des employés** développée avec **Django**.  
+Elle permet d’**ajouter, modifier, supprimer et afficher** les informations des employés via une interface simple et moderne.  
+
+---
+
+## 🚀 Fonctionnalités  
+- ➕ Ajouter un employé  
+- ✏️ Modifier les informations d’un employé  
+- ❌ Supprimer un employé (avec confirmation)  
+- 📋 Lister tous les employés  
+- 🔒 Sécurité intégrée avec **CSRF Token de Django**  
+
+---
+
+## 🛠️ Stack Technique  
+### Backend  
+- **Python 3.x**  
+- **Django** (ORM + gestion du serveur + sécurité)  
+- **SQLite** (Base de données par défaut de Django)  
+
+### Frontend  
+- **HTML5**  
+- **CSS3**  
+- **Tailwind CSS**  
+- **DaisyUI** (composants stylisés)  
+
+---
+
+## 📂 Structure du projet  
+
+
+employee_project/              # Projet principal Django
+│
+├── employee/                  # Application "employee"
+│   ├── migrations/            # Fichiers de migration (BD)
+│   ├── templates/employee/    # Templates HTML
+│   │   ├── base.html          # Template de base
+│   │   ├── list.html          # Liste des employés
+│   │   ├── formulaire.html    # Formulaire ajout/modif
+│   │   └── confirm_delete.html# Confirmation suppression
+│   ├── __init__.py
+│   ├── admin.py               # Configuration admin Django
+│   ├── apps.py                # Config app
+│   ├── forms.py               # Formulaires (ModelForm)
+│   ├── models.py              # Modèle Employee
+│   ├── tests.py               # Tests unitaires
+│   ├── urls.py                # Routes de l’app Employee
+│   └── views.py               # Logique (CRUD)
+│
+├── employee_project/          # Répertoire du projet Django
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py            # Configuration générale
+│   ├── urls.py                # Routes principales
+│   └── wsgi.py
+│
+├── db.sqlite3                 # Base de données SQLite
+├── manage.py                  # Script de gestion Django
+└── venv/                      # Environnement virtuel
+
 
 
 
