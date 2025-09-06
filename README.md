@@ -75,17 +75,17 @@ employee_project/              # Projet principal Django
 
 
 ### 2. Install dependencies
-pip install django
+-pip install django
 
 ### 3. Apply migrations (create the database)
-python manage.py makemigrations
-python manage.py migrate
+-python manage.py makemigrations
+-python manage.py migrate
 
 ### 4. Create a superuser
-python manage.py createsuperuser
+-python manage.py createsuperuser
 
 ### 5. Start the server
-python manage.py runserver
+-python manage.py runserver
 
 
 
