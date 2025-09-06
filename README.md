@@ -34,7 +34,7 @@ Finally, the **Template** renders the data into an **HTML response**, which is r
 
 ##  Project Structure
 
-plaintext
+```plaintext
 employee_project/              # Projet principal Django
 │
 ├── employee/                  # Application "employee"
@@ -64,7 +64,28 @@ employee_project/              # Projet principal Django
 ├── db.sqlite3                 # Base de données SQLite
 ├── manage.py                  # Script de gestion Django
 └── venv/                      # Environnement virtuel
-
+```
 ---
-##  Project Structure
-## ⚙️ Installation and Execution
+
+##  Installation and Execution
+
+### 1. Create and activate a virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+### 2. Install dependencies
+pip install django
+
+### 3. Apply migrations (create the database)
+python manage.py makemigrations
+python manage.py migrate
+
+### 4. Create a superuser
+python manage.py createsuperuser
+
+### 5. Start the server
+python manage.py runserver
+
+
+
+
