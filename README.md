@@ -71,7 +71,6 @@ employee_project/              # Projet principal Django
 
 ### 1. Create and activate a virtual environment
 python -m venv venv
-
 venv\Scripts\activate
 
 ### 2. Install dependencies
@@ -79,7 +78,6 @@ pip install django
 
 ### 3. Apply migrations (create the database)
 python manage.py makemigrations
-
 python manage.py migrate
 
 ### 4. Create a superuser
