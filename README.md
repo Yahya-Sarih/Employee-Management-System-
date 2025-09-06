@@ -11,7 +11,6 @@ It provides a user-friendly interface to **add, update, view, and delete employe
 - **Database**: SQLite (default, easily replaceable with PostgreSQL or MySQL)  
 - **Frontend**: HTML5, DaisyUI, Tailwind CSS / Bootstrap  
   
-
 ---
 
 ##  Architecture (MVT)  
@@ -33,40 +32,7 @@ Finally, the **Template** renders the data into an **HTML response**, which is r
 
 ---
 
-##  Project Structure  
-
-# Employee Management System 🧑‍💼  
-
-## 📌 Description  
-Ce projet est une application web de **gestion des employés** développée avec **Django**.  
-Elle permet d’**ajouter, modifier, supprimer et afficher** les informations des employés via une interface simple et moderne.  
-
----
-
-## 🚀 Fonctionnalités  
-- ➕ Ajouter un employé  
-- ✏️ Modifier les informations d’un employé  
-- ❌ Supprimer un employé (avec confirmation)  
-- 📋 Lister tous les employés  
-- 🔒 Sécurité intégrée avec **CSRF Token de Django**  
-
----
-
-## 🛠️ Stack Technique  
-### Backend  
-- **Python 3.x**  
-- **Django** (ORM + gestion du serveur + sécurité)  
-- **SQLite** (Base de données par défaut de Django)  
-
-### Frontend  
-- **HTML5**  
-- **CSS3**  
-- **Tailwind CSS**  
-- **DaisyUI** (composants stylisés)  
-
----
-
-## 📂 Structure du projet  
+##  Structure du projet  
 
 
 employee_project/              # Projet principal Django
@@ -97,8 +63,3 @@ employee_project/              # Projet principal Django
 ├── db.sqlite3                 # Base de données SQLite
 ├── manage.py                  # Script de gestion Django
 └── venv/                      # Environnement virtuel
-
-
-
-
-
