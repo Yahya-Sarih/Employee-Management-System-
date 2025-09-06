@@ -25,11 +25,12 @@ The project follows the **MVT (Model–View–Template)** design pattern:
 
 - **Template**: Represents the presentation layer. It is the HTML part that displays the data provided by the view, with Django template tags to dynamically insert content.
 
-## 🔄 How It Works
+-**How It Works**:
 A user's request first arrives at the **URL dispatcher**, which maps the incoming URL to the appropriate **View** function or class.  
 The **View** processes the request and, if necessary, interacts with the **Model** to retrieve or update data in the database.  
 Once the required data is prepared, the **View** passes it to a **Template**.  
 Finally, the **Template** renders the data into an **HTML response**, which is returned to the user's browser.
+
 ---
 
 ## 📂 Project Structure  
