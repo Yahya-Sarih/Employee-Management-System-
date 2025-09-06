@@ -78,6 +78,7 @@ pip install django
 
 ### 3. Apply migrations (create the database)
 python manage.py makemigrations
+
 python manage.py migrate
 
 ### 4. Create a superuser
