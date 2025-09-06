@@ -12,6 +12,6 @@ It provides a simple interface to **add, view, update, and delete employees**.
 
 ## 🏗️ Project Architecture (MVT)  
 This project follows the **MVT (Model – View – Template)** architecture:  
-<!-- Uploading "architecture django.png"... -->  
+ Uploading "architecture django.png"... 
 
 ## 📂 Project Structure  
