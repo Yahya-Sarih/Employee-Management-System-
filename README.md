@@ -32,8 +32,7 @@ Finally, the **Template** renders the data into an **HTML response**, which is r
 
 ---
 
-##  Structure du projet  
-### 📂 Project Structure  
+##  Project Structure
 
 ```plaintext
 employee_project/              # Projet principal Django
