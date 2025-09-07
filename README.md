@@ -92,12 +92,16 @@ employee_project/              # Projet principal Django
 ![Image](https://github.com/user-attachments/assets/c32e17c8-4f5e-42c9-b445-aee374870e90)
 
 ### Add Employee
-![Add Employee](screenshots/add_employee.png)
+![Image](https://github.com/user-attachments/assets/73d4b71d-aa0b-4d81-b61e-1ffee4ba471d)
 
 ### Employee List
-![Employee List](screenshots/list_employees.png)
+![Image](https://github.com/user-attachments/assets/ced1f4b9-56bc-4810-bce3-e66a861baa70)
 
 ### Edit Employee
-![Edit Employee](screenshots/edit_employee.png)
+![Image](https://github.com/user-attachments/assets/e41739a1-29cf-4654-9f3e-08fc67abdda5)
 
+### Delete Employee
+![Image](https://github.com/user-attachments/assets/f230c37f-fa56-4f9e-a5aa-4ba0e393202c)
 
+### final list
+![Image](https://github.com/user-attachments/assets/406833a2-f402-43b5-9865-0ac23282ef16)
