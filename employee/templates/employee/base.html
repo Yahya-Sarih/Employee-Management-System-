@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" data-theme="forest">  <!-- Langue anglaise avec thème forêt -->
+<head>
+    <meta charset="UTF-8">  <!-- Encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Responsive design -->
+    <title>Employee Management</title>  <!-- Titre de la page -->
+    <!-- Framework CSS DaisyUI avec Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" /></head>
+<body>
+    <!-- Conteneur centré de la page -->
+    <div class="flex justify-center mt-32">  <!-- Centrage horizontal avec marge du haut -->
+        <div class="flex flex-col w-3xl bg-base-200 rounded-xl p-6">  <!-- Carte principale -->
+
+            <!-- AJOUT UNIQUE : Logo de l'entreprise -->
+            
+<div class="w-full text-center mb-4">
+    <img src="{% static 'employee/Alton.png' %}" class="h-48 mx-auto">
+</div>
+
+            <div class="w-full h-fit">  <!-- Conteneur du contenu -->
+                {% block content %}  <!-- Bloc de contenu qui sera remplacé par les templates enfants -->
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

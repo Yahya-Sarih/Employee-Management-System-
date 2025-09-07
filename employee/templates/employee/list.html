@@ -1,0 +1,53 @@
+{% extends "employee/base.html" %}  <!-- Hérite du template de base pour conserver le layout principal -->
+
+{% block content %}  <!-- Début du bloc de contenu principal -->
+<div class="w-full bg-base-200 p-4">  <!-- Conteneur principal avec largeur 100%, fond gris clair et padding de 4 unités -->
+    
+    <!-- Bouton pour ajouter un nouvel employé -->
+<div class="mb-10">
+    <a href="{% url 'add_employee' %}" 
+       class="w-full bg-green-500 hover:bg-green-600 text-black font-medium py-3 px-5 rounded-full transition-all duration-200 shadow-lg block text-center">
+        Add an Employee
+    </a>
+</div>
+
+    <!-- Liste des employés avec espacement vertical -->
+    <div class="space-y-4 w-full">  <!-- Conteneur avec espacement vertical de 4 unités entre les éléments enfants -->
+        {% for emp in employes %}  <!-- Boucle pour chaque employé dans la liste -->
+        <div class="p-4 bg-base-100 rounded-lg w-full flex justify-between items-center">  <!-- Carte de chaque employé avec padding, fond blanc, coins arrondis, affichage flexible et éléments alignés au centre -->
+            <!-- Section des informations de l'employé -->
+            <div class="flex-1">  <!-- Conteneur flexible qui prend l'espace disponible -->
+                <!-- Prénom et nom sur la même ligne -->
+                <div class="flex items-baseline gap-2">  <!-- Conteneur flexible avec alignement sur la ligne de base et espacement de 2 unités -->
+                    <p class="text-lg">{{ emp.first_name }}</p>  <!-- Prénom en taille moyenne -->
+                    <p class="font-bold text-xl">{{ emp.last_name }}</p>  <!-- Nom de famille en gras et taille plus grande -->
+                </div>
+                
+                <!-- Email de l'employé -->
+                <p class="badge badge-soft badge-primary mt-2">{{ emp.email }}</p>  <!-- Badge avec style primaire, marge en haut de 2 unités -->
+                
+                <!-- Informations de contact -->
+                <div class="flex gap-2 mt-2">  <!-- Conteneur flexible avec espacement de 2 unités et marge en haut de 2 unités -->
+                    <p class="badge badge-soft badge-primary">{{ emp.phone }}</p>  <!-- Numéro de téléphone dans un badge -->
+                    <p class="badge badge-soft badge-primary">{{ emp.date_hired }}</p>  <!-- Date d'embauche dans un badge -->
+                </div>
+                <!-- Informations professionnelles -->
+                <div class="flex gap-2 mt-1">  <!-- Conteneur flexible avec espacement de 2 unités et marge en haut de 1 unité -->
+                    <p class="badge badge-soft badge-primary">{{ emp.position }}</p>  <!-- Poste dans un badge -->
+                    <p class="badge badge-dash badge-primary">{{ emp.salary }} $</p>  <!-- Salaire dans un badge avec style différent -->
+                </div>
+            </div>
+
+            <!-- Actions (Modifier/Supprimer) -->
+            <div class="space-x-2 flex">  <!-- Conteneur flexible avec espacement horizontal de 2 unités -->
+                <a href="{% url 'edit_employee' emp.id %}" class="btn btn-primary btn-sm mr-2">Edit</a>  <!-- Lien bouton Modifier avec style primaire et taille petite -->
+                <a href="{% url 'delete_employee' emp.id %}" class="btn btn-error btn-sm">Delete</a>  <!-- Lien bouton Supprimer avec style d'erreur (rouge) et taille petite -->
+            </div>
+        </div>
+        {% empty %}  <!-- Si la liste des employés est vide -->
+        <p class="text-center text-gray-500">No employees found.</p>  <!-- Message affiché quand aucun employé n'existe -->
+        {% endfor %}  <!-- Fin de la boucle pour les employés -->
+    </div>
+</div>
+{% endblock %}  <!-- Fin du bloc de contenu -->
+
