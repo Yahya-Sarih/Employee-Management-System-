@@ -89,7 +89,7 @@ employee_project/              # Projet principal Django
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/home.png)
+![Image](https://github.com/user-attachments/assets/c32e17c8-4f5e-42c9-b445-aee374870e90)
 
 ### Add Employee
 ![Add Employee](screenshots/add_employee.png)
