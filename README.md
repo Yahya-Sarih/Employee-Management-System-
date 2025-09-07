@@ -86,5 +86,18 @@ employee_project/              # Projet principal Django
 ### 5. Start the server
 - python manage.py runserver
 
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Add Employee
+![Add Employee](screenshots/add_employee.png)
+
+### Employee List
+![Employee List](screenshots/list_employees.png)
+
+### Edit Employee
+![Edit Employee](screenshots/edit_employee.png)
 
 
