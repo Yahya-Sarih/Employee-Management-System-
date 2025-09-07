@@ -1,8 +1,9 @@
 #  Employee Management System  
 
 ##  Overview  
-The **Employee Management System (EMS)** is a web application built with **Django** that simplifies employee record management.  
-It provides a user-friendly interface to **add, update, view, and delete employee data**, making it an efficient solution for HR departments and small companies.  
+The Employee Management System (EMS) is a web application developed for **Alton** using **Django**.  
+It streamlines the management of employee records by providing a user-friendly interface to add, update, view, and delete employee information.  
+This solution enhances efficiency for Alton's HR department, offering a practical and organized way to manage employee data for small to medium-sized teams.  
 
 ---
 
